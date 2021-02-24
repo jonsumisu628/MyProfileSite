@@ -10,29 +10,37 @@ function App() {
   return (
     <div>
       <Body>
-        <Title src={title} />
-        <Text />
-        <Img src={image} />
+        <Main>
+          <Title src={title} />
+          <Text />
+          <Img src={image} />
+        </Main>
+        <Footer />
       </Body>
-      <Footer />
     </div>
   );
 }
 
 const Body = styled.div`
-  display: grid;
-  grid-template-rows: 40px 20px 20px 60px 438px;
-  grid-template-columns: 60px 40px 100px 474px 40px 464px;
+  display:flex;
+  flex-direction:column;
+  min-height: 100%;
+`;
+
+const Main = styled.div`
+  margin: 60px 60px 58px 60px;
+  display: flex;
 `;
 
 const Title = styled.img`
-  grid-row: 4/5;
-  grid-column: 2/3;
+  margin: 20px 40px 0px 0px;
+  height:420px;
+  width:54px;
 `;
 
 const Img = styled.img`
-  grid-row: 3/4;
-  grid-column: 6/7;
+  height: 375px;
+  width: 500px;
 `;
 
 export default App;

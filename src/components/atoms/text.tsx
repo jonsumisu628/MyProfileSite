@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 export default function MainText() {
     return (
-        <Text>
+        <Body>
             <Heading>About</Heading>
             <Text>
                 NicName:John.Smith<br></br>BirthDay:1999/6/28<br></br>Location：Tokyo<br></br>
@@ -18,19 +18,22 @@ export default function MainText() {
             <Text>
                 アニメやゲームが好きです。バスケやスノースポーツもやります。専門学校に入学してからは筋トレも初めました。
             </Text>
-        </Text>
+        </Body>
     );
 }
 
-const Text = styled.p`
-  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
-  font-size: 18px;
-  line-height: 30px;
-  grid-row: 2/3;
-  grid-column: 4/5;
+const Body = styled.div`
+  margin-right: 60px;
+  width:550px;
 `;
 
-const Heading  =styled.p`
+const Text = styled.p`
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+  font-size: 21px;
+  line-height: 30px;
+`;
+
+const Heading = styled.p`
   font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
   font-weight: bold;
 `;
