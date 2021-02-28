@@ -118,6 +118,7 @@ const Title = styled.p`
     margin: 60px 40px 0px 0px;
     font-size: 40px;
     margin-top: 80px;
+    writing-mode: vertical-rl;
   }
 `;
 
