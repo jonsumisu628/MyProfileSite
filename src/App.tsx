@@ -55,7 +55,7 @@ const Main = styled.div`
   justify-content: center;
 
   @media (min-width: 1365px) and (min-height: 630px) {
-    margin: 300px 0px 0px 0px;
+    margin: 200px 0px 0px 0px;
     justify-content: space-around;
   }
 
