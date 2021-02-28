@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import Footer from "./components/atoms/footer";
 import title from "./components/img/text.png";
 import image from './components/img/img.jpg';
+import backimg from "./components/img/backgroundImg.png";
 
 function App() {
   return (
@@ -46,6 +47,7 @@ const Body = styled.div`
 
   @media (max-width: 414px) and (max-height: 896px){
     min-height: 100vh;
+    background-image: url(${backimg});
   }
 `;
 
@@ -88,6 +90,10 @@ const Title = styled.img`
   margin: 20px 40px 0px 0px;
   height:420px;
   width:54px;
+
+  @media (max-width: 414px) and (max-height: 896px){
+    margin-top: 100px;
+  }
 `;
 
 const Img = styled.img`
