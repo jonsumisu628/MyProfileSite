@@ -40,6 +40,7 @@ const Body = styled.div`
   flex-direction: column;
 
   @media (min-width: 1365px) and (min-height: 630px) {
+    min-height: 100vh;
     justify-content: center;
   }
 
@@ -54,7 +55,7 @@ const Main = styled.div`
   justify-content: center;
 
   @media (min-width: 1365px) and (min-height: 630px) {
-    margin: 300px 0px 270px 0px;
+    margin: 300px 0px 0px 0px;
     justify-content: space-around;
   }
 

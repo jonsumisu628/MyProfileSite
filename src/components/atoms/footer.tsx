@@ -22,6 +22,11 @@ const Footer = styled.div`
   justify-content: center;
   align-items: center;
   background-color: #dcdcdc;
+
+  @media (min-width: 1365px) and (min-height: 630px) {
+    margin-top:auto;
+  }
+
   @media (max-width: 414px) and (max-height: 896px){
     margin-top:auto;
   }
