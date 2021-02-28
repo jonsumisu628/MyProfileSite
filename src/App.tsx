@@ -38,8 +38,13 @@ function App() {
 const Body = styled.div`
   display: flex;
   flex-direction: column;
+
   @media (min-width: 1365px) and (min-height: 630px) {
     justify-content: center;
+  }
+
+  @media (max-width: 414px) and (max-height: 896px){
+    min-height: 100vh;
   }
 `;
 
@@ -47,9 +52,15 @@ const Main = styled.div`
   margin: 58px 60px 58px 60px;
   display: flex;
   justify-content: center;
+
   @media (min-width: 1365px) and (min-height: 630px) {
     margin: 300px 0px 270px 0px;
     justify-content: space-around;
+  }
+
+  @media (max-width: 414px) and (max-height: 896px){
+    margin: 60px 30px 0px 30px;
+    justify-content: space-between;
   }
 `;
 
@@ -81,6 +92,9 @@ const Title = styled.img`
 const Img = styled.img`
   height: 375px;
   width: 500px;
+  @media (max-width: 414px) and (max-height: 896px){
+    display: none;
+  }
 `;
 
 export default App;
