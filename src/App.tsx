@@ -86,6 +86,7 @@ const Main = styled.div`
     margin: 60px 30px 0px 30px;
     justify-content: space-between;
     flex-wrap: nowrap;
+    width: 354px;
   }
 `;
 
@@ -97,6 +98,11 @@ const Text = styled.div`
     // iPad
   @media (max-width: 1204px) and (max-height: 768px){
     width: 300px;
+  }
+
+  // iPhone
+  @media (max-width: 414px) and (max-height: 896px){
+    width: 274px;
   }
 `;
 
