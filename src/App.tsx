@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 
 import Footer from "./components/atoms/footer";
-import title from "./components/img/text.png";
 import image from './components/img/img.jpg';
 import backimg from "./components/img/backgroundImg.png";
 
@@ -11,7 +10,9 @@ function App() {
     <div>
       <Body>
         <Main>
-          <Title src={title} />
+          <Title>
+            Welcome to MyProfile Page
+          </Title>
           <Text>
             <Heading>About</Heading>
             <Description>
@@ -73,6 +74,19 @@ const Text = styled.div`
   width: 560px;
 `;
 
+const Title = styled.p`
+  margin: 60px 60px 0px 0px;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+  font-size: 30px;
+  writing-mode: vertical-rl;
+
+  @media (max-width: 414px) and (max-height: 896px){
+    margin: 60px 40px 0px 0px;
+    font-size: 40px;
+    margin-top: 80px;
+  }
+`;
+
 const Heading = styled.p`
   margin: 12px 0px 12px 0px;
   font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
@@ -86,15 +100,6 @@ const Description = styled.p`
   line-height: 30px;
 `;
 
-const Title = styled.img`
-  margin: 20px 40px 0px 0px;
-  height:420px;
-  width:54px;
-
-  @media (max-width: 414px) and (max-height: 896px){
-    margin-top: 100px;
-  }
-`;
 
 const Img = styled.img`
   height: 375px;
