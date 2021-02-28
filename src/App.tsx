@@ -29,8 +29,8 @@ function App() {
           </Text>
           <Img src={image} />
         </Main>
-        <Footer />
       </Body>
+      <Footer />
     </div>
   );
 }
