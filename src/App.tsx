@@ -3,6 +3,8 @@ import styled from 'styled-components';
 
 import Footer from "./components/atoms/footer";
 import image from './components/img/img.jpg';
+
+// iPhone Background Img
 import backimg from "./components/img/backgroundImg.png";
 
 function App() {
@@ -22,7 +24,7 @@ function App() {
             <Heading>Study</Heading>
             <Description>
               JavaScript / HTML / CSS / React / Gatuby <br></br>
-                Vue / Svelte / Linux / Docker / Vagurant
+                Vue / Svelte / Linux / Docker / Vagrant
             </Description>
             <Heading>Pastime</Heading>
             <Description>
@@ -41,11 +43,19 @@ const Body = styled.div`
   display: flex;
   flex-direction: column;
 
+  // PC
   @media (min-width: 1365px) and (min-height: 630px) {
     min-height: 100vh;
     justify-content: center;
   }
 
+    // iPad
+  @media (max-width: 1204px) and (max-height: 768px){
+      min-height: 100vh;
+      justify-content: center;
+  }
+
+  // iPhone
   @media (max-width: 414px) and (max-height: 896px){
     min-height: 100vh;
     background-image: url(${backimg});
@@ -57,11 +67,21 @@ const Main = styled.div`
   display: flex;
   justify-content: center;
 
+  // PC
   @media (min-width: 1365px) and (min-height: 630px) {
     margin: 200px 0px 0px 0px;
     justify-content: space-around;
   }
 
+  // iPad
+  @media (max-width: 1204px) and (max-height: 768px){
+    margin: 40px auto 0px auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 900px;
+  }
+
+  //iPhone
   @media (max-width: 414px) and (max-height: 896px){
     margin: 60px 30px 0px 30px;
     justify-content: space-between;
@@ -72,6 +92,11 @@ const Text = styled.div`
   display: flex;
   flex-direction: column;
   width: 560px;
+
+    // iPad
+  @media (max-width: 1204px) and (max-height: 768px){
+    width: 300px;
+  }
 `;
 
 const Title = styled.p`
@@ -80,6 +105,15 @@ const Title = styled.p`
   font-size: 30px;
   writing-mode: vertical-rl;
 
+  // iPad
+  @media (max-width: 1204px) and (max-height: 768px){
+    margin: 40px 60px 40px 0px;
+    width: 800px;
+    font-size: 40px;
+    writing-mode: horizontal-tb;
+  }
+
+  // iPhone
   @media (max-width: 414px) and (max-height: 896px){
     margin: 60px 40px 0px 0px;
     font-size: 40px;
@@ -98,12 +132,26 @@ const Description = styled.p`
   font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
   font-size: 21px;
   line-height: 30px;
-`;
 
+  // iPad
+  @media (max-width: 1204px) and (max-height: 768px){
+    margin-bottom: 40px;
+    width: 630px;
+  }
+`;
 
 const Img = styled.img`
   height: 375px;
   width: 500px;
+
+  // iPad
+  @media (max-width: 1204px) and (max-height: 768px){
+    margin: 40px 0px 0px 0px;
+    height: 325px;
+    width: 450px;
+  }
+
+  // iPhone
   @media (max-width: 414px) and (max-height: 896px){
     display: none;
   }

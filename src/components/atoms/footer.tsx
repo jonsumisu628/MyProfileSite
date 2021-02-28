@@ -23,10 +23,17 @@ const Footer = styled.div`
   align-items: center;
   background-color: #dcdcdc;
 
+  // PC
   @media (min-width: 1365px) and (min-height: 630px) {
     margin-top:auto;
   }
 
+  // iPad
+  @media (max-width: 1204px) and (max-height: 768px){
+    margin-top:auto;
+  }
+
+  // iPhone
   @media (max-width: 414px) and (max-height: 896px){
     margin-top:auto;
   }
