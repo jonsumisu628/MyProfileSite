@@ -85,6 +85,7 @@ const Main = styled.div`
   @media (max-width: 414px) and (max-height: 896px){
     margin: 60px 30px 0px 30px;
     justify-content: space-between;
+    flex-wrap: nowrap;
   }
 `;
 
