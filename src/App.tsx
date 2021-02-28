@@ -140,6 +140,12 @@ const Description = styled.p`
     margin-bottom: 40px;
     width: 630px;
   }
+
+  // iPhone
+  @media (max-width: 414px) and (max-height: 896px){
+    margin: 12px 0px 12px 0px;
+    width: 274px;
+  }
 `;
 
 const Img = styled.img`
