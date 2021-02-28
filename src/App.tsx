@@ -38,7 +38,7 @@ function App() {
 const Body = styled.div`
   display: flex;
   flex-direction: column;
-  @media (min-height: 630px) {
+  @media (min-width: 1365px) and (min-height: 630px) {
     justify-content: center;
   }
 `;
@@ -47,7 +47,7 @@ const Main = styled.div`
   margin: 58px 60px 58px 60px;
   display: flex;
   justify-content: center;
-  @media (min-width: 933px) and (min-height: 630px) {
+  @media (min-width: 1365px) and (min-height: 630px) {
     margin: 300px 0px 270px 0px;
     justify-content: space-around;
   }
