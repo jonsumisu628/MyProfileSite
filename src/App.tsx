@@ -103,7 +103,6 @@ const Body = styled.div`
 
   // iPhone
   @media (max-width: 414px) and (max-height: 896px){
-    display: flex;
     min-height: 100vh;
     background-image: url(${iPhonebackimg});
   }
