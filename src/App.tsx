@@ -5,7 +5,7 @@ import Footer from "./components/atoms/footer";
 import image from './components/img/img.jpg';
 
 // iPhone Background Img
-import backimg from "./components/img/backgroundImg.png";
+import iPhonebackimg from "./components/img/backgroundImg.png";
 
 function App() {
   return (
@@ -28,7 +28,7 @@ function App() {
             </Description>
             <Heading>Pastime</Heading>
             <Description>
-              アニメやゲームが好きです。バスケやスノースポーツもやります。専門学校に入学してからは筋トレも初めました。
+              アニメやゲームが好きです。バスケやスノースポーツもやります。専門学校に入学してからは筋トレも始めました。
             </Description>
           </Text>
           <Img src={image} />
@@ -38,6 +38,51 @@ function App() {
     </div>
   );
 }
+
+/*
+  // iPad Background Img
+  import iPadbackimg from "./components/img/iPadBackgroundImg.png";
+
+  // iPad 縦向き Body
+  @media (max-width: 768px) and (max-height: 1204px){
+    min-height: 100vh;
+    justify-content: center;
+    background-image: url(${iPadbackimg});
+  }
+
+  // iPad 縦向き Main
+  @media (max-width: 768px) and (max-height: 1204px){
+    margin: 40px 0px 0px 0px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 500px;
+  }
+
+  // iPad 縦向き Text
+  @media (max-width: 768px) and (max-height: 1204px){
+    width: 274px;
+  }
+
+  // iPad 縦向き Title
+  @media (max-width: 768px) and (max-height: 1204px){
+    margin: 40px 0px 40px 0px;
+    font-size: 40px;
+    writing-mode: horizontal-tb;
+  }
+
+  // iPad 縦向き Discription
+  @media (max-width: 768px) and (max-height: 1204px){
+    margin-bottom: 40px;
+    width: 278px;
+  }
+
+  // iPad 縦向き Img
+  @media (max-width: 768px) and (max-height: 1204px){
+    display: none;
+  }
+
+
+*/
 
 const Body = styled.div`
   display: flex;
@@ -49,16 +94,16 @@ const Body = styled.div`
     justify-content: center;
   }
 
-    // iPad
+  // iPad 横向き
   @media (max-width: 1204px) and (max-height: 768px){
-      min-height: 100vh;
-      justify-content: center;
+    min-height: 100vh;
+    justify-content: center;
   }
 
   // iPhone
   @media (max-width: 414px) and (max-height: 896px){
     min-height: 100vh;
-    background-image: url(${backimg});
+    background-image: url(${iPhonebackimg});
   }
 `;
 
@@ -73,7 +118,7 @@ const Main = styled.div`
     justify-content: space-around;
   }
 
-  // iPad
+  // iPad 横向き
   @media (max-width: 1204px) and (max-height: 768px){
     margin: 40px auto 0px auto;
     justify-content: space-between;
@@ -95,7 +140,7 @@ const Text = styled.div`
   flex-direction: column;
   width: 560px;
 
-    // iPad
+  // iPad 横向き
   @media (max-width: 1204px) and (max-height: 768px){
     width: 300px;
   }
@@ -112,7 +157,7 @@ const Title = styled.p`
   font-size: 30px;
   writing-mode: vertical-rl;
 
-  // iPad
+  // iPad 横向き
   @media (max-width: 1204px) and (max-height: 768px){
     margin: 40px 60px 40px 0px;
     width: 800px;
@@ -141,7 +186,7 @@ const Description = styled.p`
   font-size: 21px;
   line-height: 30px;
 
-  // iPad
+  // iPad 横向き
   @media (max-width: 1204px) and (max-height: 768px){
     margin-bottom: 40px;
     width: 630px;
@@ -158,7 +203,7 @@ const Img = styled.img`
   height: 375px;
   width: 500px;
 
-  // iPad
+  // iPad 横向き
   @media (max-width: 1204px) and (max-height: 768px){
     margin: 40px 0px 0px 0px;
     height: 325px;

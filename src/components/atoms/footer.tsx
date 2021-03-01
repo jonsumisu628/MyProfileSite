@@ -28,8 +28,13 @@ const Footer = styled.div`
     margin-top:auto;
   }
 
-  // iPad
+  // iPad 横向き
   @media (max-width: 1204px) and (max-height: 768px){
+    margin-top:auto;
+  }
+
+  // iPad 横向き
+  @media (max-width: 768px) and (max-height: 1204px){
     margin-top:auto;
   }
 
