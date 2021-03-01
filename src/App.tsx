@@ -7,9 +7,6 @@ import image from './components/img/img.jpg';
 // iPhone Background Img
 import iPhonebackimg from "./components/img/backgroundImg.png";
 
-// iPad Background Img
-import iPadbackimg from "./components/img/iPadBackgroundImg.png";
-
 function App() {
   return (
     <div>
@@ -98,13 +95,6 @@ const Body = styled.div`
     background-image: url(${iPhonebackimg});
   }
 
-  // iPad 縦向き Body
-  @media (max-width: 768px) and (max-height: 1204px){
-    min-height: 100vh;
-    justify-content: center;
-    background-image: url(${iPadbackimg});
-  }
-
   // iPad 横向き
   @media (max-width: 1204px) and (max-height: 768px){
     min-height: 100vh;
@@ -129,14 +119,6 @@ const Main = styled.div`
     justify-content: space-between;
     flex-wrap: nowrap;
     width: 354px;
-  }
-
-  // iPad 縦向き Main
-  @media (max-width: 768px) and (max-height: 1204px){
-    margin: 40px auto 0px auto;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    width: 500px;
   }
 
   // iPad 横向き
@@ -164,11 +146,6 @@ const Text = styled.div`
     width: 274px;
   }
 
-  // iPad 縦向き Text
-  @media (max-width: 768px) and (max-height: 1204px){
-    width: 274px;
-  }
-
   // iPad 横向き
   @media (max-width: 1204px) and (max-height: 768px){
     width: 300px;
@@ -187,13 +164,6 @@ const Title = styled.p`
     font-size: 40px;
     margin-top: 80px;
     writing-mode: vertical-rl;
-  }
-
-  // iPad 縦向き Title
-  @media (max-width: 768px) and (max-height: 1204px){
-    margin: 40px 0px 40px 0px;
-    font-size: 40px;
-    writing-mode: horizontal-tb;
   }
 
   // iPad 横向き
@@ -223,12 +193,6 @@ const Description = styled.p`
     width: 274px;
   }
 
-  // iPad 縦向き Discription
-  @media (max-width: 768px) and (max-height: 1204px){
-    margin-bottom: 60px;
-    width: 500px;
-  }
-
   // iPad 横向き
   @media (max-width: 1204px) and (max-height: 768px){
     margin-bottom: 40px;
@@ -242,11 +206,6 @@ const Img = styled.img`
 
   // iPhone
   @media (max-width: 414px) and (max-height: 896px){
-    display: none;
-  }
-
-  // iPad 縦向き Img
-  @media (max-width: 768px) and (max-height: 1204px){
     display: none;
   }
 
